@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link,
 } from 'react-router-dom';
+import axios from 'axios'
 import './App.css';
 
 function Payment() {
@@ -15,7 +16,7 @@ function Payment() {
     })
 
     paymentHandler.open({
-      external: 'false',
+      external: 'true',
       amount: '20000',
       tax: '0',
       tax_base: '0',
@@ -41,7 +42,28 @@ function Payment() {
   return <button onClick={handlePayment}>Pagar</button>
 }
 
-function Response() {
+function queryString(query) {
+  const res = {}
+  query
+    .replace(/\?/, '')
+    .split('&')
+    .forEach(q => {
+      const [key, value] = q.split('=')
+      res[key] = value
+    })
+  return res
+}
+
+function Response({ location }) {
+  useEffect(() => {
+    const { ref_payco } = queryString(location.search)
+
+    axios({
+      method: 'GET',
+      url: `https://api.secure.payco.co/validation/v1/reference/${ref_payco}`
+    })
+      .then(({ data }) => console.log(data))
+  }, [location])
   return <h1>Response</h1>
 }
 
