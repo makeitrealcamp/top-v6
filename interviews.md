@@ -42,4 +42,10 @@
 // chunk([1, 2, 3, 4, 5], 4) --> [[ 1, 2, 3, 4], [5]]
 // chunk([1, 2, 3, 4, 5], 10) --> [[ 1, 2, 3, 4, 5]]
 ```
+### September 10th - Interviw #4
+
+1. What is hoisting?
+1. What is a container? What is it good for?
+1. What is the difference between unit and integration testing?
+1. [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)
 
