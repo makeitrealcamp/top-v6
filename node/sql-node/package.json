@@ -17,6 +17,7 @@
     "sequelize": "5.22"
   },
   "devDependencies": {
+    "faker": "^5.1.0",
     "nodemon": "^2.0.4",
     "sequelize-cli": "5.5.1"
   }
