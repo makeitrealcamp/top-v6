@@ -56,10 +56,15 @@
 1. What is prop drilling? How can we solve/prevent it?
 1. [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)
 
-### Septiembre 24th - Interview #6
+### September 24th - Interview #6
 
 1. What are pseudo-elements and pseudo-classes?
 1. What is inmutability and why is it important to React?
 1. What is the lifecicle of a React component?
 1. [Positions of Large Groups](https://leetcode.com/problems/positions-of-large-groups/)
 
+### October 1st - Interview #7
+
+1. What is semantic HTML?
+1. What are Streams in Node?
+1. What kind of relations can we define in SQL databases?
